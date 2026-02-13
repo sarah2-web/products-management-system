@@ -1,0 +1,66 @@
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.min.css"> 
+    <link rel="stylesheet" href="style.css">
+    <title>products</title>
+  </head>
+  <body>
+    <div class="cruds">
+      <div class="head">
+        <h2>products</h2>
+        <p>products management system</p>
+      </div>
+      <div class="inputs">
+        <input type="text" placeholder="title" id="title">
+        <div class="price">
+          <input onkeyup="getTotal()" type="number" placeholder="price" id="price">
+          <input onkeyup="getTotal()" type="number" placeholder="taxes" id="taxes">
+          <input onkeyup="getTotal()" type="number" placeholder="ads" id="ads">
+          <input onkeyup="getTotal()" type="number" placeholder="discount" id="discount">
+          <small id="total"></small>
+        </div>
+        <input type="number" placeholder="count" id="count">
+        <input type="text" placeholder="category" id="category">
+        <button id="submit">creat</button>
+      </div>
+
+      <div class="output">
+        <div class="searchblock">
+          <input type="text" onkeyup="searchdata(this.value)" id="search" placeholder="search">
+          <div class="btnsearch">
+            <button id="searchtitle" onclick="getsearchMood(this.id)">search by title</button>
+            <button id="searchcategory" onclick="getsearchMood(this.id)">search by category</button>
+          </div>
+        </div>
+       
+          <div id="deleteall"></div>
+        <table>
+            <tr>
+              <th>id</th>
+              <th>title</th>
+              <th>price</th>
+              <th>taxes</th>
+              <th>ads</th>
+              <th>discount</th>
+              <th>total</th>
+              <th>category</th>
+              <th>update</th>
+              <th>delete</th>
+            </tr>
+            <tbody id="tbody">
+              <!-- data will be inserted here dynamically -->
+            </tbody>
+          </table>
+        
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
