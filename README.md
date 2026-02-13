@@ -4,7 +4,7 @@ A dynamic and responsive **Web Application** built with Vanilla JavaScript to ma
 This system allows users to handle product data with ease, featuring a clean and user-friendly interface.
 
 ## 🚀 Live Demo
-[Click here to view the live project](https://github.com/sarah2-web/products-management-system.git) 
+[Click here to view the live project](https://github.com/sarah2-web/products-management-system/) 
 
 
 ## 📸 Screenshots
