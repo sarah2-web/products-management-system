@@ -8,9 +8,12 @@ This system allows users to handle product data with ease, featuring a clean and
 
 
 ## 📸 Screenshots
+**Home**
 ![Project Preview](home.png)
+**Add Products**
 ![Add products Preview](addProduct.png)
-![total price Preview](addProduct.png)
+**Total Price**
+![total price Preview](totalPrice.png)
 > *Tip: You can replace this link with an actual screenshot image after uploading it to your repo.*
 
 ## ✨ Features
